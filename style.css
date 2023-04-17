@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 94%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  display: inline-flex;
+  list-style-type: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #dddd;
+  color: #d91a5e;
+}
+
+.active {
+  
+  color: #d91a5e;
+}
+
+.nav-btn button {
+  font-size: 20px;
+  font-weight: bold;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #dddd;
+  color: #d91a5e;
+}
+
+.nav-btn button:hover {
+  background-color: #d91a5e;
+  color: #fff;
+}
+
+.nav-icon {
+  position: relative;
+  border: 1px solid #fff;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  display: none;
+}
+
+.nav-icon .b {
+  background-color: #fff;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.nav-icon .b-2 {
+  position: absolute;
+  top: auto;
+  bottom: 30%;
+}
+.event-section,
+.explore-section,
+.tours-section {
+  padding: 50px 0;
+}
+
+/* HERO-SECTION-START */
+
+.hero-cont {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/travel-world.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero-cont h5 {
+  padding-top: 15%;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.line {
+  background-color: #d91a5e;
+  width: 160px;
+  height: 4px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.line2 {
+  background-color: #d91a5e;
+  width: 160px;
+  height: 4px;
+}
+
+.hero-cont h1 {
+  padding-top: 30px;
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn button {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 40px;
+  background-color: #d91a5e;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+  outline: none;
+}
+
+.btn button:hover {
+  transform: scale(0.98);
+  background-color: #dddd;
+  color: #d91a5e;
+}
+
+/* HERO-SECTION-END */
+
+/* EVENT-SECTION-START */
+
+.event-cont h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #0f0f0f;
+}
+
+.event-card {
+  padding: 30px 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.event-image img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.event-image img:hover {
+  transform: scale(0.96);
+  cursor: pointer;
+}
+
+.event-content {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.event-content h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.event-content p {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+}
+
+.btn-e button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #d91a5e;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.4s linear;
+}
+
+.btn-e button:hover {
+  background-color: #dddd;
+  color: #d91a5e;
+  transform: scale(0.98);
+}
+
+/* EVENT-SECTION-END */
+
+/* EXPLORE-SECTION-START */
+
+.explore-cont {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/tips-for-travelling-to-america-5.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.explore-content {
+  position: absolute;
+  left: 30px;
+  top: 30%;
+  text-align: center;
+}
+
+.explore-content h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.explore-content p {
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.explore-content button {
+  margin-top: 40px;
+}
+
+/* TOUR-SECTION-START */
+
+.tours-cont {
+  display: flex;
+}
+
+.tour-content {
+  padding: 150px 10px 0px 50px;
+}
+
+.tour-content h3 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #4a4573;
+}
+
+.tour-content p {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+  text-align: justify;
+}
+
+.tours-image {
+  display: flex;
+  gap: 15px;
+}
+
+.t-image img {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  transition: transform 0.3s linear;
+}
+
+.t-image img:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+}
+
+.btn-tour {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-tour button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #d91a5e;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.3s linear;
+}
+
+.footer-cont {
+  background-color: #484a74;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  color: #fff;
+}
+
+.card {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h5 {
+  font-size: 20px;
+}
+
+.footer-icon span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-icon span i:hover {
+  color: #d91a5e;
+}
