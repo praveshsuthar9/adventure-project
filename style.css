@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  font-family: sans-serif;
 }
 
 .container {
@@ -20,6 +20,7 @@ header {
   justify-content: space-between;
   padding: 10px;
   z-index: 999;
+  scrollbar-darkshadow-color: pink;
 }
 
 .logo {
@@ -49,7 +50,6 @@ nav ul li a:hover {
 }
 
 .active {
-  
   color: #d91a5e;
 }
 
